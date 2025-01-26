@@ -8,7 +8,7 @@ export default function Contact() {
       <p className="contact-text">
         Interested in working with me? Let’s create something amazing together!
       </p>
-      <a href="mailto:drewbush1990@gmail.com" className="contact-button">
+      <a href="mailto:andrewbush.tech@gmail.com" className="contact-button">
         Contact Me
       </a>
     </div>
