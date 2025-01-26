@@ -1,23 +1,30 @@
 import React from "react";
-import "./Experience.css";
+import AnimatedCard from "./AnimatedCard";
+import "./Experience.css"; // Add this to import the new CSS file
 
-const Experience = () => {
+export default function Experience() {
+  const experiences = [
+    {
+      role: "Student Software Engineering Intern",
+      company: "Levrum Data Technologies",
+      description: `Collaborated to deploy an AI bot executing trading strategies with reinforcement learning, achieving a 10% increase in trading accuracy. Managed cloud engineering with AWS and SSH EC2 instances, reducing runtime by 41% using CUDA GPUs. Coordinated backend-to-frontend integration and enhanced UI for improved user experience and system resilience.`,
+      date: "April 2024 - June 2024",
+    },
+  ];
+
   return (
-    <section id="experience" className="experience">
-      <h1>Experience</h1>
-      <ul>
-        <li>
-          <strong>Software Engineer Intern</strong> - Levrum Data Technologies
-          <br />
-          Developed an AI trading bot and enhanced system efficiency.
-        </li>
-        <li>
-          <strong>Freelance Developer</strong> - Delivered scalable software
-          solutions to clients.
-        </li>
-      </ul>
-    </section>
+    <div id="experience" className="experience-container">
+      <h2 className="experience-header">Experience</h2>
+      <div className="experience-content">
+        {experiences.map((exp, index) => (
+          <AnimatedCard key={index}>
+            <h3 className="experience-role">{exp.role}</h3>
+            <h4 className="experience-company">{exp.company}</h4>
+            <p className="experience-description">{exp.description}</p>
+            <p className="experience-date">{exp.date}</p>
+          </AnimatedCard>
+        ))}
+      </div>
+    </div>
   );
-};
-
-export default Experience;
+}

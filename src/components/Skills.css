@@ -1,33 +1,44 @@
-/* Skills.css */
-.skills {
-    background-color: #161b22;
-    padding: 3rem 1rem;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-  }
-  
-  .skill img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    background-color: #21262d;
-    padding: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .skill img:hover {
-    transform: scale(1.1);
-  }
-  
-  .skill p {
-    color: #c9d1d9;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-  
+.skills-carousel-container {
+  background-color: #161b22; /* Change this to your preferred background color */
+  padding: 3rem 1rem;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+.skills-header {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 2rem;
+}
+
+.skills-carousel {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #21262d; /* Carousel background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional for a shadow effect */
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #2d333b; /* Background color for skill images */
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-image:hover {
+  transform: scale(1.1);
+}
+
+.skill-name {
+  color: #ffffff; /* Text color */
+  font-size: 1rem;
+  margin-top: 10px;
+}

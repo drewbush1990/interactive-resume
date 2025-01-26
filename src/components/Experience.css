@@ -1,23 +1,39 @@
-/* Experience.css */
-.experience {
-    background-color: #161b22;
-    padding: 3rem 1rem;
-    border-top: 2px solid #21262d;
-  }
-  
-  .experience ul {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .experience li {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    color: #c9d1d9;
-  }
-  
-  .experience li strong {
-    color: #58a6ff;
-    font-size: 1.2rem;
-  }
-  
+.experience-container {
+  padding: 20px;
+  background-color: #161b22; /* Dark background */
+  color: #ffffff; /* Default text color is white */
+}
+
+.experience-header {
+  color: #00bcd4; /* Light blue for the header */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-role {
+  color: #00bcd4; /* Highlighted light blue for the role */
+  margin-bottom: 10px;
+}
+
+.experience-company {
+  color: #58a6ff; /* Slightly different blue for company name */
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  color: #ffffff; /* Pure white for better readability */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5; /* Add spacing for better readability */
+}
+
+.experience-date {
+  font-size: 0.8rem;
+  color: #aaaaaa; /* Slightly faded color for dates */
+}

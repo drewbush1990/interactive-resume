@@ -1,14 +1,16 @@
 import React from "react";
-import "./Contact.css";
+import "./Contact.css"; // Import the CSS file
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <section id="contact" className="contact">
-      <h1>Contact Me</h1>
-      <p>Email: <a href="mailto:drewbush1990@gmail.com">drewbush1990@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-bush">Andrew Bush</a></p>
-    </section>
+    <div id="contact" className="contact-container">
+      <h2 className="contact-header">Let’s Work Together</h2>
+      <p className="contact-text">
+        Interested in working with me? Let’s create something amazing together!
+      </p>
+      <a href="mailto:drewbush1990@gmail.com" className="contact-button">
+        Contact Me
+      </a>
+    </div>
   );
-};
-
-export default Contact;
+}

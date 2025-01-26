@@ -1,21 +1,22 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import SkillsCarousel from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <main>
       <Navbar />
       <About />
       <Experience />
+      <SkillsCarousel />
       <Projects />
-      <Skills />
       <Contact />
+      </main>
     </div>
   );
 }

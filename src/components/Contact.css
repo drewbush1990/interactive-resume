@@ -1,26 +1,40 @@
-/* Contact.css */
-.contact {
-    background-color: #0d1117;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .contact h1 {
-    margin-bottom: 2rem;
-  }
-  
-  .contact p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .contact a {
-    color: #58a6ff;
-    font-size: 1.2rem;
-  }
-  
-  .contact a:hover {
-    color: #1f6feb;
-    text-decoration: underline;
-  }
-  
+.contact-container {
+  background-color: #1e1e2f; /* Same dark background color */
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  margin: 0; /* Ensure it doesn't inherit margin issues */
+}
+
+.contact-header {
+  color: #00bcd4; /* Header text color */
+  margin-bottom: 2rem;
+}
+
+.contact-text {
+  color: #ffffff; /* Text color */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bcd4; /* Button background color */
+  color: #121212; /* Button text color */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1f6feb; /* Hover color */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Add this rule to ensure parent matches */
+body {
+  background-color: #1e1e2f; /* Match the dark theme */
+}

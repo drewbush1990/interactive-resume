@@ -2,14 +2,42 @@ import React from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const handleScroll = (event, id) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#experience" onClick={(e) => handleScroll(e, "experience")}>
+            Experience
+          </a>
+        </li>
+        <li>
+          <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#skills" onClick={(e) => handleScroll(e, "skills")}>
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );
