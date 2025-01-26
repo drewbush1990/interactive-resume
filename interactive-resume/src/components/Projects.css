@@ -1,0 +1,32 @@
+/* Projects.css */
+.projects {
+    background-color: #0d1117;
+    padding: 3rem 1rem;
+  }
+  
+  .projects ul {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .projects li {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  .projects li strong {
+    color: #58a6ff;
+    font-size: 1.2rem;
+  }
+  
+  .projects a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  
+  .projects a:hover {
+    text-decoration: underline;
+  }
+  
