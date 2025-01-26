@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+import React, { useState } from "react";
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+export default function InteractiveResumeSPA() {
+  const [activeSection, setActiveSection] = useState("about");
 
-## Available Scripts
+  const sections = {
+    about: (
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a software engineer passionate about building scalable, innovative solutions. With experience in AI, backend systems, and cloud technologies, 
+          I bring a detail-oriented and problem-solving mindset to every project.
+        </p>
+      </div>
+    ),
+    projects: (
+      <div>
+        <h2>Projects</h2>
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          <li style={{ margin: '15px 0', padding: '15px', border: '1px solid #444', borderRadius: '5px', backgroundColor: '#222' }}>
+            <h3 style={{ color: '#00d8ff' }}>AI Application & RESTful API for NLP</h3>
+            <p>
+              Developed a scalable AI application handling 1,000+ daily calls using Python and JavaScript. Implemented backend APIs and cloud-based databases to enhance resilience and scalability.
+            </p>
+          </li>
+          <li style={{ margin: '15px 0', padding: '15px', border: '1px solid #444', borderRadius: '5px', backgroundColor: '#222' }}>
+            <h3 style={{ color: '#00d8ff' }}>Autonomous Vehicle Research Software Optimization</h3>
+            <p>
+              Improved algorithm performance by 10% using Python, C++, and Java. Focused on data structures and optimization for computer vision algorithms.
+            </p>
+          </li>
+          <li style={{ margin: '15px 0', padding: '15px', border: '1px solid #444', borderRadius: '5px', backgroundColor: '#222' }}>
+            <h3 style={{ color: '#00d8ff' }}>Augmented Reality Web Application</h3>
+            <p>
+              Created an AR app integrating real-world data using JavaScript, Python, and Groovy. Designed scalable, interactive frontend-to-backend systems.
+            </p>
+          </li>
+        </ul>
+      </div>
+    ),
+    contact: (
+      <div>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:drewbush1990@gmail.com" style={{ color: '#00d8ff', textDecoration: 'none' }}>drewbush1990@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/andrew-bush-22b09148" style={{ color: '#00d8ff', textDecoration: 'none' }}>Andrew Bush</a></p>
+      </div>
+    )
+  };
 
-In the project directory, you can run:
+  const techLogos = [
+    { name: "Python", url: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png" },
+    { name: "JavaScript", url: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
+    { name: "C++", url: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png" },
+    { name: "React", url: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png" }
+  ];
 
-### `npm start`
+  return (
+    <div style={{ fontFamily: 'Arial, sans-serif', margin: '20px', color: '#ddd', backgroundColor: '#121212', padding: '20px', borderRadius: '8px' }}>
+      <header style={{ textAlign: 'center', padding: '20px 0', borderBottom: '2px solid #00d8ff' }}>
+        <h1 style={{ fontSize: '2.5em', color: '#00d8ff' }}>Andrew Bush</h1>
+        <p style={{ fontSize: '1.2em', color: '#aaa' }}>Software Engineer | AI Enthusiast | Problem Solver</p>
+      </header>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+      <nav style={{ textAlign: 'center', margin: '20px 0' }}>
+        <button
+          style={{
+            margin: '0 10px',
+            padding: '10px 20px',
+            fontSize: '16px',
+            backgroundColor: activeSection === 'about' ? '#00d8ff' : '#333',
+            color: activeSection === 'about' ? '#121212' : '#ddd',
+            border: '2px solid #00d8ff',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}
+          onClick={() => setActiveSection("about")}
+        >
+          About Me
+        </button>
+        <button
+          style={{
+            margin: '0 10px',
+            padding: '10px 20px',
+            fontSize: '16px',
+            backgroundColor: activeSection === 'projects' ? '#00d8ff' : '#333',
+            color: activeSection === 'projects' ? '#121212' : '#ddd',
+            border: '2px solid #00d8ff',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}
+          onClick={() => setActiveSection("projects")}
+        >
+          Projects
+        </button>
+        <button
+          style={{
+            margin: '0 10px',
+            padding: '10px 20px',
+            fontSize: '16px',
+            backgroundColor: activeSection === 'contact' ? '#00d8ff' : '#333',
+            color: activeSection === 'contact' ? '#121212' : '#ddd',
+            border: '2px solid #00d8ff',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}
+          onClick={() => setActiveSection("contact")}
+        >
+          Contact
+        </button>
+      </nav>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+      <main style={{ margin: '20px 0' }}>
+        {sections[activeSection]}
+      </main>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      <footer style={{ textAlign: 'center', marginTop: '30px' }}>
+        <h3 style={{ color: '#00d8ff', marginBottom: '10px' }}>Technologies</h3>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+          {techLogos.map((logo) => (
+            <div key={logo.name} style={{ textAlign: 'center' }}>
+              <img src={logo.url} alt={logo.name} style={{ width: '50px', height: '50px', marginBottom: '5px' }} />
+              <p style={{ fontSize: '12px', color: '#ddd' }}>{logo.name}</p>
+            </div>
+          ))}
+        </div>
+      </footer>
+    </div>
+  );
+}
