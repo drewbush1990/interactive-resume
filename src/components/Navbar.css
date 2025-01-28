@@ -23,10 +23,10 @@
   background: none;
   border: none;
   color: #00bcd4;
-  font-size: 32px; /* Make the menu toggle button larger */
+  font-size: 32px;
   cursor: pointer;
   position: absolute;
-  left: 10px;
+  left: 15px;
   display: none;
 }
 
@@ -48,7 +48,7 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  padding: 10px 15px; /* Increase padding for touch usability */
+  padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -67,28 +67,28 @@
   .navbar-links {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Add space between menu items */
+    gap: 15px;
     position: absolute;
     top: 60px;
-    left: 10px; /* Add padding around the menu */
+    left: 10px;
     right: 10px;
     background-color: #1e1e2f;
-    border: 1px solid #00bcd4;
-    border-radius: 10px; /* Larger border radius for better appearance */
-    padding: 15px; /* Add internal padding */
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    padding: 20px;
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .navbar-links.open {
-    max-height: 500px; /* Adjust for larger content */
+    max-height: 500px;
     visibility: visible;
     opacity: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* Add scroll for long content */
   }
 
   .navbar-links li {
@@ -96,7 +96,7 @@
   }
 
   .navbar-links a {
-    font-size: 20px; /* Increase font size for better readability */
-    padding: 12px 20px; /* Larger clickable area */
+    font-size: 20px; /* Larger font for readability */
+    padding: 15px 20px; /* Larger touch targets */
   }
 }
