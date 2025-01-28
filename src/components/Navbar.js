@@ -5,12 +5,12 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = (event, id) => {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setIsMenuOpen(false); // Close the menu when a link is clicked
+    setIsMenuOpen(false); // Close the menu after navigating
   };
 
   return (
