@@ -10,32 +10,29 @@
   margin-bottom: 20px;
 }
 
-.experience-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Glow effect in dark mode only */
+.dark-mode .experience-header {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 40px rgba(255, 255, 255, 0.4);
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.experience-role {
-  color: var(--accent-color);
-  margin-bottom: 10px;
+/* Remove glow in light mode */
+.light-mode .experience-header {
+  text-shadow: none !important;
+  color: #000000 !important;
 }
 
-.experience-company {
-  color: var(--accent-color);
-  margin-bottom: 10px;
-}
-
-.experience-description {
-  color: var(--text-color);
-  font-size: 1rem;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.experience-card {
-  background-color: var(--card-bg-color);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.6), 
+                 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 
+                 0 0 20px rgba(255, 255, 255, 0.7), 
+                 0 0 40px rgba(255, 255, 255, 0.5);
+  }
 }

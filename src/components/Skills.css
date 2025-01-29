@@ -9,35 +9,16 @@
   margin-bottom: 2rem;
 }
 
-.skills-carousel {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: var(--card-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+/* Glow effect in dark mode only */
+.dark-mode .skills-header {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 40px rgba(255, 255, 255, 0.4);
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.skill-item {
-  text-align: center;
-}
-
-.skill-image {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  background-color: var(--card-bg-color);
-  padding: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.skill-image:hover {
-  transform: scale(1.1);
-}
-
-.skill-name {
-  color: var(--text-color);
-  font-size: 1rem;
-  margin-top: 10px;
+/* Remove glow in light mode */
+.light-mode .skills-header {
+  text-shadow: none !important;
+  color: #000000 !important;
 }

@@ -6,19 +6,19 @@
   --button-hover-bg-color: #117b42;
   --card-bg-color: #222;
   --secondary-text-color: #aaaaaa;
-  --glow-color: rgba(0, 188, 212, 0.8);
+  --glow-color: rgba(255, 255, 255, 0.8);
   --font-family: "Poppins", sans-serif;
 }
 
 .light-mode {
   --background-color: #ffffff;
   --text-color: #000000;
-  --accent-color: #1e90ff;
+  --accent-color: #030101;
   --button-bg-color: #f0f0f0;
   --button-hover-bg-color: #d3d3d3;
   --card-bg-color: #f5f5f5;
   --secondary-text-color: #555555;
-  --glow-color: rgba(30, 144, 255, 0.7);
+  --glow-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Apply Font to Whole Site */
