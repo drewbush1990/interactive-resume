@@ -8,10 +8,10 @@ export default function AnimatedCard({ children }) {
       style={{
         padding: "20px",
         margin: "10px",
-        backgroundColor: "var(--card-bg-color)", // Updated
+        backgroundColor: "var(--card-bg-color)",
         borderRadius: "8px",
         boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
-        color: "var(--text-color)", // Ensure text color updates
+        color: "var(--text-color)",
         transition: "background-color 0.3s ease, color 0.3s ease",
       }}
     >

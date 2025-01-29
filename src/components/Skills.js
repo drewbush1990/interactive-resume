@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Skills.css"; // Ensure the CSS file is imported
+import "./Skills.css";
 
 export default function SkillsCarousel() {
   const skills = [

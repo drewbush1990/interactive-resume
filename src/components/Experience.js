@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedCard from "./AnimatedCard";
-import "./Experience.css"; // Add this to import the new CSS file
+import "./Experience.css";
 
 export default function Experience() {
   const experiences = [

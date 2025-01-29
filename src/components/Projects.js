@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedCard from "./AnimatedCard";
-import "./Projects.css"; // Import the new CSS file
+import "./Projects.css";
 
 export default function Projects() {
   const projects = [

@@ -13,7 +13,7 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 1rem;
-  background-color: var(--card-bg-color); /* Updated */
+  background-color: var(--card-bg-color);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -26,7 +26,7 @@
   width: 80px;
   height: 80px;
   margin: 0 auto;
-  background-color: var(--card-bg-color); /* Updated */
+  background-color: var(--card-bg-color);
   padding: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -37,7 +37,7 @@
 }
 
 .skill-name {
-  color: var(--text-color); /* Ensure text color updates */
+  color: var(--text-color);
   font-size: 1rem;
   margin-top: 10px;
 }
