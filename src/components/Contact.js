@@ -4,7 +4,7 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <div id="contact" className="contact-container">
-      <h2 className="contact-header">Let’s Work Together</h2>
+      <h2 className="projects-header glowing-text">Let's Work Together</h2>
       <p className="contact-text">
         Interested in working with me? Let’s create something amazing together!
       </p>

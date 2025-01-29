@@ -24,7 +24,7 @@ export default function SkillsCarousel() {
 
   return (
     <div id="skills" className="skills-carousel-container">
-      <h2 className="skills-header">Technical Skills</h2>
+      <h2 className="skills-header glowing-text">Technical Skills</h2>
       <div className="skills-carousel">
         <Slider {...settings}>
           {skills.map((skill, index) => (

@@ -14,7 +14,7 @@ export default function Experience() {
 
   return (
     <div id="experience" className="experience-container">
-      <h2 className="experience-header">Experience</h2>
+      <h2 className="experience-header glowing-text">Experience</h2>
       <div className="experience-content">
         {experiences.map((exp, index) => (
           <AnimatedCard key={index}>

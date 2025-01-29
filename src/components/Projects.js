@@ -32,7 +32,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="projects-container">
-      <h2 className="projects-header">Projects</h2>
+      <h2 className="projects-header glowing-text">Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <AnimatedCard key={index}>
