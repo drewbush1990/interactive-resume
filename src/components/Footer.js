@@ -12,7 +12,7 @@ const Footer = () => {
           LinkedIn
         </a>
       </div>
-      <p>© 2024 Andrew Bush. All rights reserved.</p>
+      <p>© 2025 Andrew Bush. All rights reserved.</p>
     </footer>
   );
 };
