@@ -1,12 +1,11 @@
 .skills-carousel-container {
-  background-color: #161b22; /* Change this to your preferred background color */
+  background-color: var(--background-color);
   padding: 3rem 1rem;
-  border-radius: 8px; /* Optional for rounded corners */
 }
 
 .skills-header {
   text-align: center;
-  color: #00bcd4;
+  color: var(--accent-color);
   margin-bottom: 2rem;
 }
 
@@ -14,9 +13,9 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #21262d; /* Carousel background */
+  background-color: var(--card-bg-color); /* Updated */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional for a shadow effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .skill-item {
@@ -27,7 +26,7 @@
   width: 80px;
   height: 80px;
   margin: 0 auto;
-  background-color: #2d333b; /* Background color for skill images */
+  background-color: var(--card-bg-color); /* Updated */
   padding: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -38,7 +37,7 @@
 }
 
 .skill-name {
-  color: #ffffff; /* Text color */
+  color: var(--text-color); /* Ensure text color updates */
   font-size: 1rem;
   margin-top: 10px;
 }

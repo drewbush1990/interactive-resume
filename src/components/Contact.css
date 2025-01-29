@@ -1,19 +1,18 @@
 .contact-container {
-  background-color: #1e1e2f; /* Same dark background color */
+  background-color: var(--background-color);
   text-align: center;
   padding: 3rem 1rem;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-  margin: 0; /* Ensure it doesn't inherit margin issues */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 .contact-header {
-  color: #00bcd4; /* Header text color */
+  color: var(--accent-color);
   margin-bottom: 2rem;
 }
 
 .contact-text {
-  color: #ffffff; /* Text color */
+  color: var(--text-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -21,8 +20,8 @@
 .contact-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #00bcd4; /* Button background color */
-  color: #121212; /* Button text color */
+  background-color: var(--accent-color);
+  color: var(--background-color);
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -30,11 +29,6 @@
 }
 
 .contact-button:hover {
-  background-color: #1f6feb; /* Hover color */
-  transform: scale(1.05); /* Slight scale effect */
-}
-
-/* Add this rule to ensure parent matches */
-body {
-  background-color: #1e1e2f; /* Match the dark theme */
+  background-color: var(--button-hover-bg-color);
+  transform: scale(1.05);
 }

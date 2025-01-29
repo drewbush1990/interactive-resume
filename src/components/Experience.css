@@ -1,11 +1,11 @@
 .experience-container {
   padding: 20px;
-  background-color: #161b22; /* Dark background */
-  color: #ffffff; /* Default text color is white */
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .experience-header {
-  color: #00bcd4; /* Light blue for the header */
+  color: var(--accent-color);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -17,23 +17,25 @@
 }
 
 .experience-role {
-  color: #00bcd4; /* Highlighted light blue for the role */
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 .experience-company {
-  color: #58a6ff; /* Slightly different blue for company name */
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 .experience-description {
-  color: #ffffff; /* Pure white for better readability */
+  color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 10px;
-  line-height: 1.5; /* Add spacing for better readability */
+  line-height: 1.5;
 }
 
-.experience-date {
-  font-size: 0.8rem;
-  color: #aaaaaa; /* Slightly faded color for dates */
+.experience-card {
+  background-color: var(--card-bg-color); /* Updated */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

@@ -1,11 +1,11 @@
 .projects-container {
   padding: 20px;
-  background-color: #161b22; /* Dark background for the section */
-  color: #ffffff; /* Default white text color */
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .projects-header {
-  color: #00bcd4; /* Light blue for the header */
+  color: var(--accent-color);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -18,13 +18,20 @@
 }
 
 .project-title {
-  color: #00bcd4; /* Light blue for project titles */
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 .project-description {
-  color: #ffffff; /* White for better readability */
+  color: var(--text-color);
   font-size: 1rem;
-  line-height: 1.5; /* Better spacing for paragraphs */
+  line-height: 1.5;
   margin: 0;
+}
+
+.project-card {
+  background-color: var(--card-bg-color); /* Updated */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
