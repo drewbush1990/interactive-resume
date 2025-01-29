@@ -10,7 +10,6 @@
   margin-bottom: 20px;
 }
 
-/* Glow effect in dark mode only */
 .dark-mode .projects-header {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
                0 0 20px rgba(255, 255, 255, 0.6), 
@@ -18,7 +17,6 @@
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-/* Remove glow in light mode */
 .light-mode .projects-header {
   text-shadow: none !important;
   color: #000000 !important;

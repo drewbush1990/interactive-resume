@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  // Load dark mode preference from localStorage (if exists), otherwise default to true
   const storedMode = localStorage.getItem("darkMode");
   const [darkMode, setDarkMode] = useState(
     storedMode ? JSON.parse(storedMode) : true
@@ -25,7 +24,6 @@ function App() {
       document.body.classList.remove("dark-mode");
     }
 
-    // Save preference to localStorage
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 

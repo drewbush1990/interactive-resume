@@ -9,7 +9,6 @@
   margin-bottom: 2rem;
 }
 
-/* Glow effect in dark mode only */
 .dark-mode .skills-header {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
                0 0 20px rgba(255, 255, 255, 0.6), 
@@ -17,13 +16,11 @@
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-/* Remove glow in light mode */
 .light-mode .skills-header {
   text-shadow: none !important;
   color: #000000 !important;
 }
 
-/* 🔽 Adjusted Skill Image Size */
 .skill-item {
   text-align: center;
   display: flex;
@@ -33,8 +30,8 @@
 }
 
 .skill-image {
-  width: 75px;  /* Slightly bigger than before */
-  height: 75px; /* Maintain aspect ratio */
+  width: 75px;
+  height: 75px;
   margin: 0 auto;
   background-color: var(--card-bg-color);
   padding: 8px;
@@ -46,11 +43,10 @@
   transform: scale(1.1);
 }
 
-/* 🔽 Adjusted Text Size & Centering */
 .skill-name {
   color: var(--text-color);
-  font-size: 1rem;  /* Restore normal size */
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
-  margin-top: 8px; /* Increase spacing for better layout */
+  margin-top: 8px;
 }
