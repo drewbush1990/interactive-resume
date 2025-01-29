@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,32 +10,41 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  // Load dark mode preference from localStorage (if exists), otherwise default to true
+  const storedMode = localStorage.getItem("darkMode");
+  const [darkMode, setDarkMode] = useState(
+    storedMode ? JSON.parse(storedMode) : true
+  );
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+
+    // Save preference to localStorage
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    const root = document.documentElement;
-    if (darkMode) {
-      root.classList.add("light-mode");
-      root.classList.remove("dark-mode");
-    } else {
-      root.classList.add("dark-mode");
-      root.classList.remove("light-mode");
-    }
+    setDarkMode((prevMode) => !prevMode);
   };
 
   return (
     <div>
       <button onClick={toggleDarkMode} className="mode-toggle">
-        {darkMode ? "🌙" : "🌞" }
+        {darkMode ? "🌙"  :"🌞" }
       </button>
       <main>
         <Navbar />
         <Hero />
         <About />
         <Experience />
-        <Projects />
         <SkillsCarousel />
+        <Projects />
         <Contact />
         <Footer />
       </main>
