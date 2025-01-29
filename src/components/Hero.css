@@ -7,22 +7,41 @@
     text-align: center;
 }
 
-/* Title Glow Effect */
+/* Title Glow Effect - Dark Mode (White Glow) */
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 600;
     color: var(--accent-color);
-    text-shadow: 0 0 15px var(--glow-color), 0 0 30px var(--glow-color), 0 0 45px var(--glow-color);
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.9), 
+        0 0 20px rgba(255, 255, 255, 0.7), 
+        0 0 40px rgba(255, 255, 255, 0.5);
     animation: glow 1.5s ease-in-out infinite alternate;
 }
 
+/* Adjust glow animation */
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color), 0 0 20px var(--glow-color);
+        text-shadow: 
+            0 0 5px rgba(255, 255, 255, 0.8), 
+            0 0 10px rgba(255, 255, 255, 0.6), 
+            0 0 20px rgba(255, 255, 255, 0.4);
     }
     100% {
-        text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color), 0 0 40px var(--glow-color);
+        text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.9), 
+            0 0 20px rgba(255, 255, 255, 0.7), 
+            0 0 40px rgba(255, 255, 255, 0.5);
     }
+}
+
+/* Light Mode - Make Hero Section Text White */
+.light-mode .hero-content h1 {
+    color: #ffffff !important;
+}
+
+.light-mode .hero-content h2 {
+    color: #ffffff !important;
 }
 
 /* Subheading */
