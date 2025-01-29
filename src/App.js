@@ -43,8 +43,8 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <SkillsCarousel />
         <Projects />
+        <SkillsCarousel />
         <Contact />
         <Footer />
       </main>
