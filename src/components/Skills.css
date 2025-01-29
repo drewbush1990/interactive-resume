@@ -22,3 +22,35 @@
   text-shadow: none !important;
   color: #000000 !important;
 }
+
+/* 🔽 Adjusted Skill Image Size */
+.skill-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-image {
+  width: 75px;  /* Slightly bigger than before */
+  height: 75px; /* Maintain aspect ratio */
+  margin: 0 auto;
+  background-color: var(--card-bg-color);
+  padding: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-image:hover {
+  transform: scale(1.1);
+}
+
+/* 🔽 Adjusted Text Size & Centering */
+.skill-name {
+  color: var(--text-color);
+  font-size: 1rem;  /* Restore normal size */
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px; /* Increase spacing for better layout */
+}
