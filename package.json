@@ -2,7 +2,7 @@
   "name": "interactive-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://drewbush1990.github.io/interactive-resume",
+  "homepage": "https://andrewbush-tech.github.io/AboutMe/",
   "dependencies": {
     "cra-template": "1.2.0",
     "framer-motion": "^12.0.5",
