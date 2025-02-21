@@ -5,27 +5,26 @@ import "./Projects.css";
 export default function Projects() {
   const projects = [
     {
-      title: "AI Application & RESTful API for Natural Language Processing",
+      title: "Natural Language Processing Microservice",
       description: `
-        Developed a scalable AI application with a RESTful API handling 1,000+ daily calls using Python and JavaScript.
-        Scoped, designed, and deployed production code with full SDLC ownership and agile methodologies.
-        Optimized API performance with multi-threading for application resiliency and data processing.
+Developed a Flask-based microservice that retrieves Wikipedia summaries and integrates them into AI-generated
+responses.
+Designed an efficient request pipeline, handling structured search queries and processing data into JSON responses.
+Integrated OpenAI’s GPT model, enabling context-aware content generation by enriching responses with Wikipedia
+data.
+Built a user-friendly front-end with Flask, enhancing usability and real-time interaction.
+Implemented robust API request handling with error handling and automated JSON data parsing, ensuring high
+response reliability.
       `,
     },
     {
       title: "Autonomous Vehicle Research Software Optimization",
       description: `
-        Improved software efficiency by 10% through algorithm optimization in Python, C++, and Java.
-        Applied multi-threading, parallel programming, and data structures to boost performance and scalability.
-        Collaborated with cross-functional teams and conducted peer reviews to enhance quality.
-      `,
-    },
-    {
-      title: "Augmented Reality Web Application",
-      description: `
-        Created an augmented reality web app integrating real-world data using JavaScript, HTML, and Python.
-        Enhanced scalability through algorithm design, GPU programming, and parallel processing.
-        Ensured a smooth user experience with functional testing and documented workflows.
+Enhanced computer vision algorithms in Python, improving software efficiency on testing simulation.
+Conducted peer code reviews and collaborated with cross-functional teams to refine and validate research-driven
+improvements.
+Documented system enhancements, ensuring knowledge transfer for continued optimization in autonomous vehicle
+applications.
       `,
     },
   ];
